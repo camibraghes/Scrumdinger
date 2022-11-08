@@ -2,7 +2,20 @@ import SwiftUI
 
 struct MeetingView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            ProgressView(value: 5, total: 15)
+            HStack {
+                VStack {
+                    Text("Seconds Elapsed")
+                    Label("300", systemImage: "hourglass.bottomhalf.fill")
+                }.font(.caption)
+                Spacer()
+                VStack {
+                    Text("Seconds Remaining")
+                    Label("600", systemImage: "hourglass.tophalf.fill")
+                }.font(.caption)
+            }
+        }.padding()
     }
 }
 
