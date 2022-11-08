@@ -9,12 +9,16 @@ struct MeetingView: View {
                 VStack {
                     Text("Seconds Elapsed")
                     Label("300", systemImage: "hourglass.bottomhalf.fill")
-                }.font(.caption)
+                }
+                .font(.caption)
+            
                 Spacer()
+                
                 VStack {
                     Text("Seconds Remaining")
                     Label("600", systemImage: "hourglass.tophalf.fill")
-                }.font(.caption)
+                }
+                .font(.caption)
             }
             .accessibilityElement(children: .ignore)
             .accessibilityLabel("Time remaining")
@@ -22,14 +26,17 @@ struct MeetingView: View {
             
             Circle()
                 .strokeBorder(lineWidth: 24)
+            
             HStack {
                 Text("Speaker 1 of 3")
                 Spacer()
                 Button(action: {}) {
                     Image(systemName: "forward.fill")
-                }.accessibilityLabel("Next speaker")
+                }
+                .accessibilityLabel("Next speaker")
             }
-        }.padding()
+        }
+        .padding()
     }
 }
 
