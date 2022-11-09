@@ -27,6 +27,11 @@ struct DetailView: View {
                             .shadow(radius: 4)
                     }
                 }
+                Section(header: Text("Attendees")) {
+                    ForEach(scrum.attendees) { attendee in
+                        Label("\(attendee.name)", systemImage: "person")
+                    }
+                }
             }
             .navigationTitle("Meetings")
         }
