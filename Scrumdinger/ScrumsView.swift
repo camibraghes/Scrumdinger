@@ -10,7 +10,15 @@ struct ScrumsView: View {
                     CardView(scrum: scrum)
                 }.listRowBackground(scrum.theme.mainColor)
             }
-        }.navigationTitle("Daily Scrums")
+        }
+        .navigationTitle("Daily Scrums")
+        .toolbar {
+            Button {
+            } label: {
+                Image(systemName: "plus")
+            }
+
+        }
     }
 }
 
