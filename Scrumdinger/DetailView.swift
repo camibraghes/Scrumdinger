@@ -19,9 +19,16 @@ struct DetailView: View {
                     
                     HStack {
                         Label("Theme", systemImage: "paintpalette")
+                        Spacer()
+                        Text(scrum.theme.name)
+                            .padding(4)
+                            .background(scrum.theme.mainColor)
+                            .cornerRadius(4)
+                            .shadow(radius: 4)
                     }
                 }
-            }.navigationTitle("Meetings")
+            }
+            .navigationTitle("Meetings")
         }
     }
 }
