@@ -2,6 +2,7 @@ import SwiftUI
 
 struct DetailEditView: View {
     @State private var data = DailyScrum.Data()
+    @State private var newAttendeeName = ""
     
     var body: some View {
         Form {
@@ -22,6 +23,14 @@ struct DetailEditView: View {
                 }
                 .onDelete { indices in
                     data.attendees.remove(atOffsets: indices)
+                }
+                
+                HStack {
+                    TextField("Add New Attendee", text: $newAttendeeName)
+                    Button {
+                    } label: {
+                        Image(systemName: "plus.circle.fill")
+                    }
                 }
             }
         }
