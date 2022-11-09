@@ -7,9 +7,12 @@ struct DetailView: View {
         NavigationView {
             List {
                 Section(header: Text("Meeting Info")) {
-                    Label("Start Meeting", systemImage: "timer")
-                        .foregroundColor(.blue)
-                        .font(.headline)
+                    NavigationLink(destination: MeetingView()) {
+                        Label("Start Meeting", systemImage: "timer")
+                            .foregroundColor(.blue)
+                            .font(.headline)
+                    }
+                    
                     HStack {
                         Label("Lengh", systemImage:  "clock")
                         Spacer()
@@ -25,6 +28,12 @@ struct DetailView: View {
                             .background(scrum.theme.mainColor)
                             .cornerRadius(4)
                             .shadow(radius: 4)
+                    }
+                }
+                
+                Section(header: Text("Attendees")) {
+                    ForEach(scrum.attendees) { attendee in
+                        Label("\(attendee.name)", systemImage: "person")
                     }
                 }
             }
