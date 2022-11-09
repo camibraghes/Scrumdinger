@@ -15,6 +15,15 @@ struct DetailEditView: View {
                     Text("\(Int(data.lengthInMinutes)) minutes")
                 }
             }
+            
+            Section(header: Text("Attendees")) {
+                ForEach(data.attendees) { attendee in
+                    Text(attendee.name)
+                }
+                .onDelete { indices in
+                    data.attendees.remove(atOffsets: indices)
+                }
+            }
         }
     }
 }
