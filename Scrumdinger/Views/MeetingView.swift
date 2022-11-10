@@ -5,11 +5,11 @@ struct MeetingView: View {
     
     var body: some View {
         ZStack {
-            RoundedRectangle(cornerRadius: 4.0)
+            RoundedRectangle(cornerRadius: 16.0)
                 .fill(scrum.theme.mainColor)
             
             VStack {
-                MeetingHeaderView(secondElapsed: 20, secondRemaining: 100)
+                MeetingHeaderView(secondElapsed: 20, secondRemaining: 100, theme: .magenta)
                 Circle()
                     .strokeBorder(lineWidth: 24)
                 
