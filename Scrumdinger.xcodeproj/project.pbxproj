@@ -61,7 +61,6 @@
 			children = (
 				7639FFAB291A79F400EBC225 /* Theme.swift */,
 				7639FFAD291A7CA900EBC225 /* DailyScrum.swift */,
-				76A74796291D1C0A00525F5D /* ScrumTimer.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -90,6 +89,14 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		76A74798291D1D1800525F5D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				76A74796291D1C0A00525F5D /* ScrumTimer.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		76D6CD45291A503D0093C35F = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +116,7 @@
 		76D6CD50291A503D0093C35F /* Scrumdinger */ = {
 			isa = PBXGroup;
 			children = (
+				76A74798291D1D1800525F5D /* ViewModel */,
 				76A7478D291BD64700525F5D /* Helpers */,
 				76A7478C291BD5D700525F5D /* Views */,
 				7639FFAA291A79AB00EBC225 /* Models */,

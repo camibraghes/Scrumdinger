@@ -2,6 +2,7 @@ import SwiftUI
 
 struct MeetingView: View {
     @Binding var scrum: DailyScrum
+    @StateObject var scrumTimer = ScrumTimer()
     
     var body: some View {
         ZStack {
@@ -9,7 +10,7 @@ struct MeetingView: View {
                 .fill(scrum.theme.mainColor)
             
             VStack {
-                MeetingHeaderView(secondElapsed: 20, secondRemaining: 100, theme: .magenta)
+                MeetingHeaderView(secondElapsed: scrumTimer.secondsElapsed, secondRemaining: scrumTimer.secondsRemaining, theme: scrum.themep)
                 Circle()
                     .strokeBorder(lineWidth: 24)
                 
