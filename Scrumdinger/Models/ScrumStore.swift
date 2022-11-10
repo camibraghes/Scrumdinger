@@ -1,0 +1,32 @@
+import Foundation
+import SwiftUI
+
+
+class ScrumStore: ObservableObject {
+    @Published var scrums: [DailyScrum] = []
+    
+    private static func fileURL() throws -> URL {
+        try FileManager.default.url(for: .documentDirectory,
+                                    in: .userDomainMask,
+                                    appropriateFor: nil,
+                                    create: false)
+        .appendingPathComponent("scrums.data")
+    }
+    
+    private func loadDate(completion: @escaping (Result<[DailyScrum], Error>) -> Void) {
+        DispatchQueue.global(qos: .background).async {
+            do {
+                let fileURL = try ScrumStore.fileURL()
+                guard let file = try? FileHandle(forReadingFrom: fileURL) else {
+                    DispatchQueue.main.async {
+                        completion(.success([]))
+                    }
+                    return
+                }
+            } catch {
+                
+            }
+        }
+   
+    }
+}
