@@ -48,6 +48,20 @@ class ScrumStore: ObservableObject {
         }
     }
     
+    @discardableResult
+    static func save(scrums: [DailyScrum]) async throws -> Int {
+        try await withCheckedThrowingContinuation({ continuation in
+            save(scrums: scrums) { result in
+                switch result {
+                case .success(let scrumSaved):
+                    continuation.resume(returning: scrumSaved)
+                case .failure(let error):
+                    continuation.resume(throwing: error)
+                }
+            }
+        })
+    }
+    
     static func save(scrums: [DailyScrum], completion: @escaping (Result<Int, Error>) -> Void) {
         do {
             let data = try JSONEncoder().encode(scrums)
