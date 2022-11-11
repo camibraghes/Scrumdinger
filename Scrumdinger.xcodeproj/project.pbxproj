@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		762649A7291E834400AF6439 /* MeetingTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762649A6291E834400AF6439 /* MeetingTimerView.swift */; };
+		762649A9291E87EC00AF6439 /* SpeakerArc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762649A8291E87EC00AF6439 /* SpeakerArc.swift */; };
 		7639FFAC291A79F400EBC225 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7639FFAB291A79F400EBC225 /* Theme.swift */; };
 		7639FFAE291A7CA900EBC225 /* DailyScrum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7639FFAD291A7CA900EBC225 /* DailyScrum.swift */; };
 		7639FFB0291A7E8200EBC225 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7639FFAF291A7E8200EBC225 /* CardView.swift */; };
@@ -31,6 +32,7 @@
 
 /* Begin PBXFileReference section */
 		762649A6291E834400AF6439 /* MeetingTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingTimerView.swift; sourceTree = "<group>"; };
+		762649A8291E87EC00AF6439 /* SpeakerArc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerArc.swift; sourceTree = "<group>"; };
 		7639FFAB291A79F400EBC225 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		7639FFAD291A7CA900EBC225 /* DailyScrum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyScrum.swift; sourceTree = "<group>"; };
 		7639FFAF291A7E8200EBC225 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 			children = (
 				7639FFB1291A88D300EBC225 /* TrailingIconLabelStyle.swift */,
 				76A7479B291D22CE00525F5D /* AVPlayer.swift */,
+				762649A8291E87EC00AF6439 /* SpeakerArc.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -228,6 +231,7 @@
 				76A74793291CFF4500525F5D /* MeetingHeaderView.swift in Sources */,
 				76A7478B291BC07300525F5D /* DetailEditView.swift in Sources */,
 				7639FFAC291A79F400EBC225 /* Theme.swift in Sources */,
+				762649A9291E87EC00AF6439 /* SpeakerArc.swift in Sources */,
 				76A74787291AA17000525F5D /* DetailView.swift in Sources */,
 				76A74785291A98F100525F5D /* ScrumsView.swift in Sources */,
 				76D6CD65291A62C20093C35F /* MeetingView.swift in Sources */,
