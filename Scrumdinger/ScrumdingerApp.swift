@@ -16,7 +16,7 @@ struct ScrumdingerApp: App {
                 }
             }
             .onAppear {
-                ScrumStore.loadData { result in
+                ScrumStore.load { result in
                     switch result {
                     case .success(let scrums):
                         store.scrums = scrums
