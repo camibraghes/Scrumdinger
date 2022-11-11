@@ -2,8 +2,8 @@ import SwiftUI
 
 struct ErrorView: View {
     let errorWrapper: ErrorWrapper
+    
     var body: some View {
-        
         VStack {
             Text("An error has occurred!")
                 .font(.title)
@@ -20,7 +20,6 @@ struct ErrorView: View {
         .cornerRadius(16)
     }
 }
-
 
 struct ErrorView_Previews: PreviewProvider {
     enum SampleError: Error {
