@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		762649A3291E724C00AF6439 /* ErrorWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762649A2291E724C00AF6439 /* ErrorWrapper.swift */; };
 		7639FFAC291A79F400EBC225 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7639FFAB291A79F400EBC225 /* Theme.swift */; };
 		7639FFAE291A7CA900EBC225 /* DailyScrum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7639FFAD291A7CA900EBC225 /* DailyScrum.swift */; };
 		7639FFB0291A7E8200EBC225 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7639FFAF291A7E8200EBC225 /* CardView.swift */; };
@@ -30,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		762649A2291E724C00AF6439 /* ErrorWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorWrapper.swift; sourceTree = "<group>"; };
 		7639FFAB291A79F400EBC225 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		7639FFAD291A7CA900EBC225 /* DailyScrum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyScrum.swift; sourceTree = "<group>"; };
 		7639FFAF291A7E8200EBC225 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 				7639FFAD291A7CA900EBC225 /* DailyScrum.swift */,
 				76A7479D291D278F00525F5D /* History.swift */,
 				76A7479F291D3FA300525F5D /* ScrumStore.swift */,
+				762649A2291E724C00AF6439 /* ErrorWrapper.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -227,6 +230,7 @@
 				7639FFB2291A88D300EBC225 /* TrailingIconLabelStyle.swift in Sources */,
 				76A74793291CFF4500525F5D /* MeetingHeaderView.swift in Sources */,
 				76A7478B291BC07300525F5D /* DetailEditView.swift in Sources */,
+				762649A3291E724C00AF6439 /* ErrorWrapper.swift in Sources */,
 				7639FFAC291A79F400EBC225 /* Theme.swift in Sources */,
 				76A74787291AA17000525F5D /* DetailView.swift in Sources */,
 				76A74785291A98F100525F5D /* ScrumsView.swift in Sources */,
