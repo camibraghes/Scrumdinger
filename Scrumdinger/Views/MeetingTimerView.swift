@@ -17,7 +17,7 @@ struct MeetingTimerView: View {
                         .font(.title2)
                     Text("is speaking")
                 }
-//                .foregroundColor(theme.accentColor)
+                .foregroundColor(theme.accentColor)
             }
     }
 }
